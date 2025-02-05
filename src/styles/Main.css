@@ -1,0 +1,159 @@
+#drum-machine {
+  width: 660px;
+  height: 316px;
+  border: 5px solid rgb(226, 166, 54);
+  display: flex;
+  flex-direction: column;
+  font-family: 'Times New Roman', Times, serif;
+  background-color: lightgray;
+
+  img {
+    width: 50px;
+    margin: auto;
+    margin-right: 2px;
+    border: 2px solid black;
+    margin-top: 0;
+  }
+
+  .logo {
+    width: 30px;
+    height: 30px;
+
+  }
+
+  .drum-machine__content {
+    display: flex;
+    flex-direction: row;
+    width: 95%;
+    height: 300px;
+    margin: auto;
+    margin-top: 0;
+    margin-bottom: 20px;
+
+
+    .drum-machine__button {
+      width: 60%;
+      height: 100%;
+      display: grid;
+      gap: 10px;
+      grid-template-columns: 1fr 1fr 1fr;
+
+      button {
+        border: 2px solid black;
+        box-shadow: 2px 2px solid black;
+        border-radius: 5px;
+        background-color: dimgrey;
+        font-weight: 800;
+      }
+    }
+
+    .drum-machine__options {
+      margin-left: 5px;
+      display: flex;
+      flex-direction: column;
+      width: 40%;
+      height: 100%;
+      
+      
+
+      #display {
+        width: 80%;
+        height: 45px;
+        border: 2px solid black;
+        background-color: dimgray;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        font-weight: bold;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.1em;
+      }
+
+      .power__button {
+        width: 45px;
+        margin: auto;
+        height: 35px;
+
+      }
+
+      .power__button .pwb,
+      .pwbend {
+        border: 2px solid black;
+        background-color: black;
+        height: 15px;
+        display: flex;
+        flex-direction: row;
+
+
+
+        .pwbtntoggle {
+          height: 100%;
+          width: 50%;
+          background-color: blue;
+
+        }
+
+      }
+
+      .pwbend {
+        justify-content: flex-end;
+      }
+
+      .changeSound {
+        text-align: center;
+        width: 45px;
+        margin: auto;
+        height: 35px;
+
+      }
+
+      .changeSound .bank_button,
+      .bank_button-end {
+        border: 2px solid black;
+        background-color: black;
+        height: 15px;
+        display: flex;
+        flex-direction: row;
+
+        .bank_toggle {
+          height: 100%;
+          width: 50%;
+          background-color: blue;
+        }
+      }
+
+      .bank_button-end {
+        justify-content: flex-end;
+      }
+
+      .volume {
+        height: 25px;
+        width: 80%;
+        margin: auto;
+        position: relative;
+
+        .volume_button {
+          border: 4px solid black;
+          margin-top: 8px;
+          z-index: -1;
+        }
+
+        .volume_change {
+          border: 2px solid blue;
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          width: 2px;
+          background-color: blue;
+
+        }
+      }
+    }
+  }
+
+
+
+
+}
